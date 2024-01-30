@@ -1,3 +1,7 @@
+//HTTP5122 Front-End Web Development 
+//Assignment 2 Movie Array
+//Deryn Boscariol - N01667427
+
 // Declaring and initializing variables
 var movie1 = "Love Actually";
 var movie2 = "Baby Driver";
@@ -11,19 +15,19 @@ var userInput;
 var moviePick;
 
 //Creating an array to hold variables
-movieArray = [movie1, movie2, movie3, movie4, movie5, movie6, movie7];
+var movieArray = [movie1, movie2, movie3, movie4, movie5, movie6, movie7];
 
 //Creating a while loop so the question will rerun if the user enters anything other than a number 1-7
-while (result != true ) {
+while (result !== true) {
 
 //Asking the user which top 7 movie number they would like to pick
-var userInput = prompt("Which top movie would you like?", "Pick a number: 1-7");
+var userInput = prompt("Which top 7 movie would you like?", "Pick a number: 1-7");
 
 //Validating user input
 if (userInput >= 1 && userInput <= 7) {
     var moviePick = movieArray[userInput - 1];
 
-// Send user a pop-up saying what number and movie they have chosen    
+//Sending the user a pop-up saying what number and movie they have chosen    
 alert("Number " + userInput + " on the list is " + moviePick);
 result = true;
 } 
