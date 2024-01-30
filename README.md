@@ -21,3 +21,4 @@ repo to store files from http5122 front-end web development
 | Lab 12 | Apr 18 | 2% |
 | Assignment 5 | Apr 19 | 8% |
 | Final Pet Project | Apr 19 | 17% |
+
