@@ -1,4 +1,4 @@
-// DERYN BOSCARIOL - Asssignment 3 - 3.5 hours
+// DERYN BOSCARIOL - Asssignment 3 - n01667427
 
 // Making my object and assigning intial properties
 var recordCollection = {
@@ -7,9 +7,9 @@ var recordCollection = {
     usedRecords: 36,
     newRecords: 47,
 // Making my function which will change the value of the users favourite record
-    changeFavRecord: function(newFav){
+    changeFavRecord: function (newFav) {
         this.favRecord = newFav;
-        alert("Your favourite album is " + newFav +"!");
+        alert("Your favourite album is " + newFav + "!");
     },
 
  /* I originally misinterpreted the second part of this assignment and thought we had to make another method that updated two properties, 
@@ -41,15 +41,16 @@ var recordCollection = {
 
 } */
 }
+
 // Logging my object in the console
 console.log(recordCollection);
 
 //Making the first pop-up which will add used records into the user's collection 
-var addUsed = prompt("How many used condition records would you like to add to your collection?", "Current used records: " + recordCollection.usedRecords);
+var addUsed = prompt("How many used records would you like to add to your collection?", "Current used records: " + recordCollection.usedRecords);
 //Using a while loop to validate that the user is inputing a number and isn't inputing a null or blank value
     while (isNaN(addUsed)|| addUsed === null || addUsed === "" || addUsed === " "){
         alert("Please enter a number!");
-        addUsed = prompt("How many used condition records would you like to add to your collection?", "Current used records: " + recordCollection.usedRecords);
+        addUsed = prompt("How many used records would you like to add to your collection?", "Current used records: " + recordCollection.usedRecords);
     }
 //Adding the inputed number to the number of used records as well as the total records
     recordCollection.usedRecords = recordCollection.usedRecords + Number(addUsed);
@@ -58,7 +59,7 @@ var addUsed = prompt("How many used condition records would you like to add to y
 //Making the second pop-up which will add new records into the user's collection         
 var addNew = prompt("How many new condition records would you like to add to your collection?", "Current new records: " + recordCollection.newRecords);
 //Using a while loop to validate that the user is inputing a number and isn't inputing a null or blank value
-        while (isNaN(addNew)|| addNew === null || addNew === ""|| addNew === " "){
+        while (isNaN(addNew)|| addNew === null || addNew === "" || addNew === " ") {
             alert("Please enter a number!");
             addNew = prompt("How many new condition records would you like to add to your collection?", "Current new records: " + recordCollection.newRecords);
         }
