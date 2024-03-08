@@ -1,4 +1,4 @@
-
+// HTTP5122 Front-End Web Developmentb- Assignment 4 Registration Form - Deryn Boscariol
 
 //Creating a function for when the window loads
 window.onload = function(){
@@ -12,31 +12,38 @@ var humberId = formHandle.f__id;
 var programName = formHandle.f__program;
 var projectName = formHandle.f__project;
 
+//Creating Regex for humber id
+var validId = /^N\d{8}$/i;
 
-//creating a function to call when the form is submitted
+//Creating a function to call when the form is submitted
 function processForm(){
 
-//Validating for non-inputs
+//Validating for empty inputs in name fields
     if (firstName.value === ""){
         firstName.style.background = "red";
         firstName.focus();
         return false;
     }
+
     else if (lastName.value === ""){
         lastName.style.background = "red";
         lastName.focus();
         return false;
     }
-    else if (humberId.value === ""){
+
+//Validating for regex
+    else if (!validId.test(humberId.value)){
         humberId.style.background = "red";
         humberId.focus();
         return false;
     }
+//Validating against default selection
     else if (programName.value === "X"){
         programName.style.background ="red";
         programName.focus();
         return false;
     }
+//Validating against empty input in project name radio buttons
     else if (projectName.value === ""){
         document.getElementById("caption_project").style.background = "red";
         return false;
@@ -73,4 +80,4 @@ function processForm(){
 
 //Creating listener for onsubmit event
 formHandle.onsubmit = processForm;
-}
+};
