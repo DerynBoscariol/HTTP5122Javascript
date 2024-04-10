@@ -8,16 +8,59 @@
     </head>
     <body>
         <h1>Welcome to Deryn's Cocktail Generator</h1>
-        <form>
+        <form name="ingredients">
             <h2>Choose your liquor:</h2>
-                <input type="radio" id="gin" name="liquor" value="gin">
-                <label for="gin">Gin</label>
-                <input type="radio" id="vodka" name="liquor" value="vodka">
-                <label for="vodka">Vodka</label>
+                <fieldset id="liquorInput">
+                    <input type="radio" id="gin" name="liquorInput" value="gin">
+                    <label for="gin">Gin</label>
+                    <input type="radio" id="vodka" name="liquorInput" value="vodka">
+                    <label for="vodka">Vodka</label>
+                </fieldset>
             <h2>Choose your mix:</h2>
-                <input type="radio" id="tonic" name="mix" value="tonic">
-                <label for="tonic">Tonic Water</label>
-                <input type="radio" id="orange" name="mix" value="orange">
-                <label for="orange">Orange Juice</label>
+                <fieldset id="mixInput">
+                    <input type="radio" id="tonic" name="mixInput" value="tonic">
+                    <label for="tonic">Tonic Water</label>
+                    <input type="radio" id="orange" name="mixInput" value="orange">
+                    <label for="orange">Orange Juice</label>
+                </fieldset>
+                <button type="submit" id="generate">Generate Cocktail</button>
         </form>
+        <section id="recipies">
+            <div id="gin-orange">
+                <h3>Gin and Juice!</h3>
+                <img src="imgs/ginOrange.jpeg">
+                <ul>
+                    <li>1.5 oz gin</li>
+                    <li>4 oz orange juice</li>
+                </ul>
+                <p>Using a jigger, measure 1.5 oz of gin and pour into a tall glass over ice cubes. Top up with 4 oz orange juice. </p>
+            </div>
+            <div id="gin-tonic">
+                <h3>Gin and Tonic!</h3>
+                <img src="imgs/ginTonic.jpeg">
+                <ul>
+                    <li>1.5 oz gin</li>
+                    <li>4 oz tonic water</li>
+                </ul>
+                <p>Using a jigger, measure 2 oz of gin and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. </p>
+            </div>
+            <div id="vodka-tonic">
+                <h3>Vodka Tonic!</h3>
+                <img src="imgs/vodkaTonic.jpeg">
+                <ul>
+                    <li>2 oz of vodka</li>
+                    <li>4 oz of tonic water</li>
+                </ul>
+                <p>Using a jigger, measure 2 oz of vodka and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. </p>
+            </div>
+            <div id="vodka-orange">
+                <h3>Screwdriver!</h3>
+                <img src="imgs/vodkaOrange.jpeg">
+                <ul>
+                    <li>2 oz of vodka</li>
+                    <li>4 oz of tonic water</li>
+                </ul>
+                <p>Using a jigger, measure 2 oz of vodka and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. </p>
+            </div>
+        </section>
     </body>
