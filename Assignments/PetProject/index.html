@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
         <title>Deryn's Cocktail Generator</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="jquery-3.7.1.min.js"></script>
 		<script src="js/script.js"></script>	
     </head>
     <body>
@@ -11,17 +12,49 @@
         <form name="ingredients">
             <h2>Choose your liquor:</h2>
                 <fieldset id="liquorInput">
-                    <input type="radio" id="gin" name="liquorInput" value="gin">
-                    <label for="gin">Gin</label>
-                    <input type="radio" id="vodka" name="liquorInput" value="vodka">
-                    <label for="vodka">Vodka</label>
+                    <div id="liquorGin">
+                        <input type="checkbox" id="gin" name="liquorInput" value="gin">
+                        <label for="gin">Gin</label>
+                    </div>
+                    <div id="liquorVodka">
+                        <input type="checkbox" id="vodka" name="liquorInput" value="vodka">
+                        <label for="vodka">Vodka</label>
+                    </div>
+                    <div id="liquorRum">
+                        <input type="checkbox" id="rum" name="liquorInput" value="rum">
+                        <label for="rum">Rum</label>
+                    </div>
+                    <div id="liquorTequila">
+                        <input type="checkbox" id="tequila" name="liquorInput" value="tequila">
+                        <label for="tequila">Tequila</label>
+                    </div>
+                    <div id="liquorOrangeLiq">
+                        <input type="checkbox" id="orangeLiq" name="liquorInput" value="orangeLiq">
+                        <label for="orangeLiq">Orange Liqueur</label>
+                    </div>
                 </fieldset>
             <h2>Choose your mix:</h2>
                 <fieldset id="mixInput">
-                    <input type="radio" id="tonic" name="mixInput" value="tonic">
-                    <label for="tonic">Tonic Water</label>
-                    <input type="radio" id="orange" name="mixInput" value="orange">
-                    <label for="orange">Orange Juice</label>
+                    <div>
+                        <input type="checkbox" id="tonic" name="mixInput" value="tonic">
+                        <label for="tonic">Tonic Water</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="orange" name="mixInput" value="orange">
+                        <label for="orange">Orange Juice</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cola" name="mixInput" value="cola">
+                        <label for="cola">Cola</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lime" name="mixInput" value="lime">
+                        <label for="lime">Lime juice</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="grenadine" name="mixInput" value="grenadine">
+                        <label for="grenadine">Grenadine</label>
+                    </div>
                 </fieldset>
                 <button type="submit" id="generate">Generate Cocktail</button>
         </form>
@@ -61,6 +94,48 @@
                     <li>4 oz of tonic water</li>
                 </ul>
                 <p>Using a jigger, measure 2 oz of vodka and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. </p>
+            </div>
+            <div id="rum-cola">
+                <h3>Rum and Coke!</h3>
+                <img src="imgs/rumCola.jpeg">
+                <ul>
+                    <li>2 oz of rum</li>
+                    <li>4 oz of cola</li>
+                </ul>
+                <p>Using a jigger, measure 2 oz of rum and pour into a tall glass over ice cubes. Top up with 4 oz cola. </p>
+            </div>
+            <div id="rum-tonic">
+                <h3>Rum Tonic!</h3>
+                <img src="imgs/rumTonic.jpeg">
+                <ul>
+                    <li>2 oz of rum</li>
+                    <li>4 oz of tonic water</li>
+                </ul>
+                <p>Using a jigger, measure 2 oz of rum and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. Optional garnishes: cinnamon stick, lime wedge, ginger slice.</p>
+            </div>
+            <div id="margarita">
+                <h3>Margarita!</h3>
+                <img src="imgs/marg.jpeg">
+                <ul>
+                    <li>2 oz tequila</li>
+                    <li>1/2 oz orange liqueur</li>
+                    <li>1 oz lime juice</li>
+                </ul>
+                <p>Using a jigger, measure 2 oz of tequila, 1/2 oz of orange liqueur, and 1 oz of lime juice into a shaker with ice cubes and shake until chilled. Pour into a glass over fresh ice. Optional garnishes: salt rim, lime wedge.</p>
+            </div>
+            <div id="teq-sunrise">
+                <h3>Tequila Sunrise!</h3>
+                <img src="imgs/teqsunrise.jpeg">
+                <ul>
+                    <li>2 oz tequila</li>
+                    <li>4 oz orange juice</li>
+                    <li>1/4 oz grenadine</li>
+                </ul>
+                <p>Using a jigger, measure 4 oz of tequila and 4 oz of orange juice into a highball glass with ice and stir. Top off with 1/4 oz of grenadine and let sink to the bottom of the glass creating the sunrise effect. Optional garnishes: cherry, orange wedge.</p>
+            </div>
+            <div id="no-cocktail">
+                <h3>Sorry no cocktail found...</h3>
+                <p>Please try selecting different ingredients.</p>
             </div>
         </section>
     </body>

@@ -14,7 +14,37 @@
     display:none;
 }
 
+#rum-cola {
+    display: none;
+}
+
+#rum-tonic {
+    display: none;
+}
+
+#margarita {
+    display: none;
+}
+
+#teq-sunrise {
+    display: none;
+}
+
+#no-cocktail {
+    display: none;
+}
+
 img {
     max-width: 10%;
     height: auto;
+}
+
+#liquorInput {
+    display: flex;
+    flex-flow: column;
+}
+
+#mixInput {
+    display: flex;
+    flex-flow: column;
 }
