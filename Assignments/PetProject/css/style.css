@@ -1,3 +1,5 @@
+
+/* GIN RECIPES */
 #gin-orange {
     display:none;
 }
@@ -6,6 +8,7 @@
     display:none;
 }
 
+/* VODKA RECIPES */
 #vodka-tonic {
     display:none;
 }
@@ -14,6 +17,7 @@
     display:none;
 }
 
+/* RUM RECIPES */
 #rum-cola {
     display: none;
 }
@@ -22,6 +26,7 @@
     display: none;
 }
 
+/* TEQUILA RECIPES */
 #margarita {
     display: none;
 }
@@ -30,10 +35,16 @@
     display: none;
 }
 
+#long-island {
+    display: none;
+}
+
+/* NO AVAILABLE RECIPES */
 #no-cocktail {
     display: none;
 }
 
+/* GENERAL STYLING */
 img {
     max-width: 10%;
     height: auto;

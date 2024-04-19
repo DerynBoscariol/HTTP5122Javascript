@@ -10,6 +10,7 @@
     <body>
         <h1>Welcome to Deryn's Cocktail Generator</h1>
         <form name="ingredients">
+            <!-------------LIQUORS--------------->
             <h2>Choose your liquor:</h2>
                 <fieldset id="liquorInput">
                     <div id="liquorGin">
@@ -30,9 +31,10 @@
                     </div>
                     <div id="liquorOrangeLiq">
                         <input type="checkbox" id="orangeLiq" name="liquorInput" value="orangeLiq">
-                        <label for="orangeLiq">Orange Liqueur</label>
+                        <label for="orangeLiq">Triple Sec</label>
                     </div>
                 </fieldset>
+                <!-------------MIXES--------------->
             <h2>Choose your mix:</h2>
                 <fieldset id="mixInput">
                     <div>
@@ -48,6 +50,10 @@
                         <label for="cola">Cola</label>
                     </div>
                     <div>
+                        <input type="checkbox" id="lemon" name="mixInput" value="lemon">
+                        <label for="lemon">Lemon juice</label>
+                    </div>
+                    <div>
                         <input type="checkbox" id="lime" name="mixInput" value="lime">
                         <label for="lime">Lime juice</label>
                     </div>
@@ -59,6 +65,7 @@
                 <button type="submit" id="generate">Generate Cocktail</button>
         </form>
         <section id="recipies">
+            <!-------------GIN RECIPES--------------->
             <div id="gin-orange">
                 <h3>Gin and Juice!</h3>
                 <img src="imgs/ginOrange.jpeg">
@@ -77,6 +84,7 @@
                 </ul>
                 <p>Using a jigger, measure 2 oz of gin and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. </p>
             </div>
+            <!-------------VODKA RECIPES--------------->
             <div id="vodka-tonic">
                 <h3>Vodka Tonic!</h3>
                 <img src="imgs/vodkaTonic.jpeg">
@@ -95,6 +103,7 @@
                 </ul>
                 <p>Using a jigger, measure 2 oz of vodka and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. </p>
             </div>
+            <!-------------RUM RECIPES--------------->
             <div id="rum-cola">
                 <h3>Rum and Coke!</h3>
                 <img src="imgs/rumCola.jpeg">
@@ -113,15 +122,16 @@
                 </ul>
                 <p>Using a jigger, measure 2 oz of rum and pour into a tall glass over ice cubes. Top up with 4 oz tonic water. Optional garnishes: cinnamon stick, lime wedge, ginger slice.</p>
             </div>
+            <!-------------TEQUILA RECIPES--------------->
             <div id="margarita">
                 <h3>Margarita!</h3>
                 <img src="imgs/marg.jpeg">
                 <ul>
                     <li>2 oz tequila</li>
-                    <li>1/2 oz orange liqueur</li>
+                    <li>1/2 oz triple sec</li>
                     <li>1 oz lime juice</li>
                 </ul>
-                <p>Using a jigger, measure 2 oz of tequila, 1/2 oz of orange liqueur, and 1 oz of lime juice into a shaker with ice cubes and shake until chilled. Pour into a glass over fresh ice. Optional garnishes: salt rim, lime wedge.</p>
+                <p>Using a jigger, measure 2 oz of tequila, 1/2 oz of triple sec, and 1 oz of lime juice into a shaker with ice cubes and shake until chilled. Pour into a glass over fresh ice. Optional garnishes: salt rim, lime wedge.</p>
             </div>
             <div id="teq-sunrise">
                 <h3>Tequila Sunrise!</h3>
@@ -131,8 +141,24 @@
                     <li>4 oz orange juice</li>
                     <li>1/4 oz grenadine</li>
                 </ul>
-                <p>Using a jigger, measure 4 oz of tequila and 4 oz of orange juice into a highball glass with ice and stir. Top off with 1/4 oz of grenadine and let sink to the bottom of the glass creating the sunrise effect. Optional garnishes: cherry, orange wedge.</p>
+                <p>Using a jigger, measure 2 oz of tequila and 4 oz of orange juice into a highball glass with ice and stir. Top off with 1/4 oz of grenadine and let sink to the bottom of the glass creating the sunrise effect. Optional garnishes: cherry, orange wedge.</p>
             </div>
+            <!-------------LONG ISLAND RECIPE--------------->
+            <div id="long-island">
+                <h3>Long Island Iced Tea!</h3>
+                <img src="imgs/longIsland.jpeg">
+                <ul>
+                    <li>3/4 oz vodka</li>
+                    <li>3/4 oz rum</li>
+                    <li>3/4 oz tequila</li>
+                    <li>3/4 oz gin</li>
+                    <li>3/4 oz triple sec</li>
+                    <li>3/4 oz lemon juice</li>
+                    <li>Cola, to top</li>
+                </ul>
+                <p>Using a jigger, measure 3/4 oz vodka, 3/4 oz rum,  3/4 oz tequila, 3/4 oz gin, 3/4 oz triple sec, and 3/4 oz lemon juice into a shaker with ice and shake until chilled. Pour into a highball glass with fresh ice and top with cola. Optional garnish: lemon wedge.</p>
+            </div>
+            <!-------------NO AVAILABLE RECIPES--------------->
             <div id="no-cocktail">
                 <h3>Sorry no cocktail found...</h3>
                 <p>Please try selecting different ingredients.</p>

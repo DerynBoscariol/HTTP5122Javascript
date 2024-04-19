@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SVG Lab</title>
+	<script src="Lab-12-svg.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="Lab-12-svg.css" type="text/css">
+</head>
+
+<body id="svgBody">
+
+<div id="svgDiv">
+
+	<svg id="scene" width="300" height="300"  xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<!--ALL OF YOUR SVG ELEMENTS GO HERE INSIDE THE <svg PARENT ELEMENT.-->
+		<rect id="sky" width="300" height="100" fill="#ABDCF8"></rect>
+		<rect id="water" width="300" height="100" fill="#486FC2" x="0" y="100"></rect>
+		<rect id="sand" width="300" height="100" fill="#EFD09E" x="0" y="200"></rect>
+		<circle id="sun" cx="260" cy="40" r="30" fill="yellow" ></circle>
+		<rect id="towel" width="40" height="70" x="40" y="220" fill="pink" stroke="purple" stroke-width="3"></rect>
+
+		<line class="seagull-1" x1="30" y1="30" x2="40" y2="20" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+		<line class="seagull-1" x1="40" y1="20" x2="50" y2="30" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+		<line class="seagull-1" x1="50" y1="30" x2="60" y2="20" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+		<line class="seagull-1" x1="60" y1="20" x2="70" y2="30" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+
+		<line class="seagull-2" x1="90" y1="50" x2="100" y2="40" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+		<line class="seagull-2" x1="100" y1="40" x2="110" y2="50" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+		<line class="seagull-2" x1="110" y1="50" x2="120" y2="40" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+		<line class="seagull-2" x1="120" y1="40" x2="130" y2="50" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+
+		<line class="boat" x1="225" y1="140" x2="225" y2="70" stroke="black" stroke-width="4" stroke-linecap="round"></line>
+		<polygon class="boat" points="180,140 200,170 250,170 270,140" fill="red"></polygon>
+		<polygon class="boat" points="227,72 227,135 270,135" fill="white"></polygon>
+		<!--
+	<pattern id="dotGrid" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10"  >
+		<rect width="10" height="10" stroke="black" fill="none" />
+	</pattern>
+	<rect width="300" height="300" fill="url(#dotGrid)" />
+-->
+	</svg>
+	<div>
+	<button id="set-sail">Set Sail!</button>
+	</div>
+
+</div>
+</body>
+</html>

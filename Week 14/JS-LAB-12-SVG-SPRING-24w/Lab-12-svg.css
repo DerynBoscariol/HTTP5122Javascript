@@ -1,0 +1,19 @@
+
+.boat {
+    animation: sail 7s ease-in-out infinite;
+    display: none;
+}
+
+@keyframes sail {
+    0% {
+        transform: translateX(130px);
+    }
+
+    50% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(130px);
+    }
+}
